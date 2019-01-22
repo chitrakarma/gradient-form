@@ -1,0 +1,66 @@
+body{
+    overflow-x: hidden;
+    background-image: url("../media/bg.jpg");
+    transition: 0.5s;
+}
+
+.form-container{
+    border-radius: 5px;
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgb(250, 249, 249);
+}
+
+.line{
+    height: 2px;
+    width: 100%;
+    background-color: #E6E6E6;
+    margin: 0;
+}
+
+.form-heading{
+    font-size: 3.5vw;
+    letter-spacing: 0.2em; 
+    font-weight: 600; 
+    transition: 0.5s;
+}
+
+.button{
+    color: white;
+    font-weight: bold;
+    background: -webkit-linear-gradient(right, #2f91ff, #00c513, #2f91ff, #00c513);
+    background: -o-linear-gradient(right, #2f91ff, #00c513, #2f91ff, #00c513);
+    background: -moz-linear-gradient(right, #2f91ff, #00c513, #2f91ff, #00c513);
+    background: linear-gradient(right, #2f91ff, #00c513, #2f91ff, #00c513);
+}
+
+@media only screen and (max-width: 320px){
+
+    label{
+        font-size: 1.5vw;
+    }
+}
+
+@media only screen and (max-width: 420px){
+
+    label{
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .form-heading{
+        font-size: 8vw;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .form-heading{
+        font-size: 8vw;
+    }
+}
+
+.hide{
+    display: none;
+}

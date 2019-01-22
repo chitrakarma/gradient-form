@@ -1,0 +1,119 @@
+<!DOCTYPE hmtl>
+<html>
+    <head>
+        <title>
+            Register
+        </title>
+        <link rel="stylesheet" href="../css/bootstrap.css" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/jquery.js"></script>
+        <script src="../js/script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-12" style="margin: 0 auto;">
+
+                    <!-- Form starts from here -->
+                    <div class="form-container">
+                        <h1 class="text-center form-heading">REGISTER</h1>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container" >
+                            <form action="register.php" method="post">
+                                <div class="form-group">
+                                    <label>
+                                        Name:
+                                    </label>
+                                    <input type="text" class="form-control" placeholder="Enter your Full Name" name="fullName" data-validate="Please Enter your Name" required/>
+                                </div>
+                                <div class="form-group">
+                                    <label>
+                                        Email:
+                                    </label>
+                                    <input type="email" class="form-control" placeholder="Enter your e-mail address" name="eMail" data-validate="Please Enter a valid email address" required/>
+                                </div>
+                                <div class="form-group">
+                                    <label>
+                                        College:
+                                    </label>
+                                    <input type="text" class="form-control" placeholder="Enter name of your college" name="collegeName" data-validate="Please Enter name of your college" required/>
+                                </div>
+                                <div class="form-group">
+                                    <label>
+                                        Branch:
+                                    </label>
+                                    <select class="form-control" name="branchName" required>
+                                        <option value="cse">CSE</option>
+                                        <option value="me">ME</option>
+                                        <option value="ex">EX</option>
+                                        <option value="ce">CE</option>
+                                        <option value="au">AU</option>
+                                        <option value="pct">pct</option>
+                                        <option value="ec">EC</option>
+                                        <option value="it">IT</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>
+                                        Contact:
+                                    </label>
+                                    <input type="tel" class="form-control" name="contact" placeholder="Enter your phone number" data-validate="Please Enter a valid phone number" required />
+                                </div>
+                                <div class="form-group">
+                                    <label>
+                                        Register For:
+                                    </label>
+                                    <select class="form-control" name="event" id="event" required>
+                                        <option selected>Choose Event</option>
+                                        <option value="coding">Coding</option>
+                                        <option value="pubg" >PUBG</option>
+                                    </select>
+                                    <div class="myInfo" style="margin-top: 20px;">
+                                        <div class="coding box">
+                                            <div class="form-group">
+                                                <textarea name="prevExp" id="prevExp" class="form-control" placeholder="Enter previous coding experience"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="pubg box">
+                                            <div class="form-group">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-xs-12" style="margin: 0 auto; width: 100%;">
+                                                            <p id="info" class="form-control text-center">The fee for registration is rs 100</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="container-fluid" style="margin-bottom: 3%;">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="container">
+                                        <div class="row">
+                                            <button type="submit" class="btn button col-sm-4" style="margin: 0 auto; height: 60px; margin-bottom: 2%;">SUBMIT</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
